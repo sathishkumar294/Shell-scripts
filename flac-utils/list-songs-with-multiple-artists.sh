@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Check if the correct number of arguments are provided
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <directory>"
+    echo "List flac files in a directory with more than one album artists."
+    echo "Useful when trying to find which files to update album artits"
+    exit 1
+fi
+
 # Set the target directory
 TARGET_DIR="$1"
 
