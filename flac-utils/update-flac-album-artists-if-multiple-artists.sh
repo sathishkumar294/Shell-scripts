@@ -3,6 +3,7 @@
 # Check if the correct number of arguments are provided
 if [ "$#" -ne 2 ]; then
     echo "Usage: $0 <directory> <artist>"
+    echo "For all flac files in the directory, set the target artist as album artist if the target artist is one of the many artists in the flac file".
     exit 1
 fi
 

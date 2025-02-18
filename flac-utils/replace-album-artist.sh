@@ -3,6 +3,8 @@
 # Check if the correct number of arguments are provided
 if [ "$#" -ne 3 ]; then
     echo "Usage: $0 <directory> <original_string> <replacement_string>"
+    echo "Replace one album artist by another for all flac files in a directory."
+    echo "Useful when renaming artists."
     exit 1
 fi
 
